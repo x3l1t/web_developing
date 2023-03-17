@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+     <meta charset="utf-8" />
+     <meta http-equiv="Content-Type" content="text/html"> 
+    <title>Snowboard</title>
+    <script type="text/javascript">
+      // When the user clicks on div, open the popup
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+      </script>
+      <script type="text/javascript">
+         // When the user clicks on div, open the popup
+         function myFunction1() {
+           var popup = document.getElementById("Popup2");
+           popup.classList.toggle("show");
+         }
+         var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length} 
+  for (i = 0; i < slides.length; i++) { 
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) { 
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; }
+
+  var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = x.length} 
+        for (i = 0; i < x.length; i++) { 
+          x[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) { 
+          dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " w3-white";
+      }
+  
+      </script>
+         <script type="text/javascript">
+          var slides = document.querySelectorAll('.slide');
+          var currentSlide = 0;
+          var slideInterval = setInterval(nextSlide, 5000);
+      
+          function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+          }
+      </script>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+        }
+        table{
+        text-align: center;
+        border-collapse: collapse;
+        
+        }
+        body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+   background-color: LightSkyBlue;
+   background-image: url("testtt.jpg");
+   background-size: cover;
+   background-position: left;
+   }
+
+   body {
+      margin: 50px;
+    }
+    @font-face {
+      font-family: "April June";
+      src: url("April June.otf") format("opentype");
+    }
+    h1 {
+      padding: 0px;
+      margin: -50px;
+      background-size: 2000px;
+      background-image: url("test3.jpg");
+      background-repeat: no-repeat;
+      font-family: "April June", sans-serif;
+      font-size: 75px;
+    
+    }
+h2, h3 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+a {
+  color: #0099cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+</style>
+<style type="text/css">
+      /* Popup container - can be anything you want */
+
+      .popup1 {
+     position: relative;
+     display: inline-block;
+     cursor: pointer;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+   }
+   
+
+   /* The actual popup */
+   .popup1 .popuptext {
+     visibility: hidden;
+     width: 350px;
+     background-color: #555;
+     color: #fff;
+     text-align: center;
+     border-radius: 6px;
+     padding: 8px 0;
+     position: absolute;
+     z-index: 1;
+     bottom: 125%;
+     left: 50%;
+     margin-left: -80px;
+     padding-top: 0px
+   }
+   
+   /* Popup arrow */
+   .popup1 .popuptext::after {
+     content: "";
+     position: absolute;
+     top: 100%;
+     left: 50%;
+     margin-left: -100px;
+     border-width: 10px;
+     border-style: solid;
+     border-color: #555 transparent transparent transparent;
+   }
+   
+   /* Toggle this class - hide and show the popup */
+   .popup1 .show {
+     visibility: visible;
+     -webkit-animation: fadeIn 1s;
+     animation: fadeIn 1s;
+     animation-duration: 1s;
+   }
+   /* Add animation (fade in the popup) */
+   @-webkit-keyframes fadeIn {
+     from {opacity: 0;} 
+     to {opacity: 1;}
+   }
+   
+   @keyframes fadeIn {
+     from {opacity: 0;}
+     to {opacity:1 ;}
+   }
+   </style>
+    <style type="text/css">
+   .popup2 {
+     position: relative;
+     display: inline-block;
+     cursor: pointer;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+   }
+   
+
+   /* The actual popup */
+   .popup2 .popuptext {
+     visibility: hidden;
+     width: 410px;
+     background-color: #555;
+     color: #fff;
+     text-align: center;
+     border-radius: 6px;
+     padding: 8px 0;
+     position: absolute;
+     z-index: 1;
+     bottom: 125%;
+     left: 50%;
+     margin-left: -80px;
+     padding-top: 0px
+   }
+   
+   /* Popup arrow */
+   .popup2 .popuptext::after {
+     content: "";
+     position: absolute;
+     top: 100%;
+     left: 50%;
+     margin-left: -132px;
+     border-width: 10px;
+     border-style: solid;
+     border-color: #555 transparent transparent transparent;
+   }
+   
+   /* Toggle this class - hide and show the popup */
+   .popup2 .show {
+     visibility: visible;
+     -webkit-animation: fadeIn 1s;
+     animation: fadeIn 1s;
+     animation-duration: 1s;
+   }
+   
+   .slideshow-container {
+    width: 600px;
+  height: 400px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container .slide {
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow-container .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide {
+  display: none;
+  text-align: center;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text {
+  font-size: 12px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 90%;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+		.slide video {
+			width: 100%;
+			height: 100%;
+			
+		}
+  .mySlides {
+    width: 1899px;
+    margin-left:-44px;
+  }
+
+  .mainh2 {
+    padding: 5px;
+      margin: -50px;
+      background-size: 2000px;
+      background-image: url("test3.jpg");
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      font-size: 40px;
+
+  }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;"> Snowboarding</h1>
+    <p><br /><br /><b>Snowboarding</b> – sport zimowy polegający na jeździe lub wykonywaniu manewrów na desce snowboardowej. Za początek snowboardingu można uznać rok 1965, kiedy Sherman Poppen wymyślił „snurfera”, choć zjeżdżanie po zaśnieżonym stoku na jednej desce było praktykowane już wcześniej. Dyscyplina wprowadzona została do programu Zimowych Igrzysk Olimpijskich w 1998 roku </p>
+    <h2 style="text-align: center;">Miejscowości</h2>
+    <h3 style="text-align: center;">Trasy na Litwie</h3>
+    <div class="slideshow-container">
+      <div class="slide">
+        <img src="1.jpg" alt="Image 1" />
+        <div class="text"><i>Czy zastanawiałeś się kiedyś, jak wypielęgnowane pola golfowe przetrwają zimę? To staje się rajem dla miłośników narciarstwa biegowego! Znakomity okrężny tor do narciarstwa biegowego o długości ponad 5 km - w European Centre Golf Club (rejon wileński). Mniej doświadczeni narciarze pokonają tę trasę w godzinę, a bardziej doświadczeni w pół godziny. Odbywają się tu zarówno indywidualne, jak i grupowe lekcje jazdy na nartach.</i></div>
+      </div>
+      <div class="slide">
+        <img src="bot2.jpg" alt="Image 2" />
+        <div class="text"><i>Miłośników jazdy na nartach zapraszamy również do Ogrodu Botanicznego VU w Kairėnai (Wilno). Trasy o długości 4 km, odpowiednie do jazdy na nartach dla amatorów (niedoświadczonych lub mniej doświadczonych narciarzy), nieprofesjonalnych, zostały zainstalowane i utrzymywane przez Ogród Botaniczny wraz z Litewskim Narodowym Związkiem Narciarskim.</i></div>
+      </div>
+      <div class="slide">
+        <img src="Botanikos trasa.jpg" alt="Image 3" />
+        <div class="text"><i>Miłośników jazdy na nartach zapraszamy również do Ogrodu Botanicznego VU w Kairėnai (Wilno). Trasy o długości 4 km, odpowiednie do jazdy na nartach dla amatorów (niedoświadczonych lub mniej doświadczonych narciarzy), nieprofesjonalnych, zostały zainstalowane i utrzymywane przez Ogród Botaniczny wraz z Litewskim Narodowym Związkiem Narciarskim.</i></div>
+      </div>
+      <div class="slide">
+        <img src="snowarena1.jpg" alt="Image 4" />
+        <div class="text"><i>Można uprawiać narciarstwo biegowe, aw Druskiennikach znajduje się wyposażona i oświetlona trasa biegowa od parkingu Snow Arena do mostu Parkowego. Jeśli pogoda nie dopisze lub spadnie śnieg, plan B to wizyta w samej Snow Arenie, jedynym czynnym przez cały rok zimowym kompleksie rozrywkowym w krajach bałtyckich. Na obszarze 8 hektarów z trzema trasami do uprawiania narciarstwa zjazdowego i snowboardu zarówno dla amatorów, jak i profesjonalistów, temperatura zawsze wynosi od -2 ºC do -4 ºC. Snow Arena działa bez dni wolnych. Początkujący mogą nauczyć się jeździć na nartach razem z doświadczonymi i profesjonalnymi instruktorami narciarskimi, świadczone są wypożyczalnie sprzętu narciarskiego i odzieży.</i></div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <p><br /><br /><br /><br /><br /><br /><br /></p>
+    <h2 style="text-align: center;">Style</h2>
+    <ul>
+        <li><b>Freestyle</b> - styl polegający na wykonywaniu jak najefektowniejszych trików, głównie z wykorzystaniem konstrukcji takich jak skocznie, raile, boxy. Można go uprawiać zarówno na górskich stokach jak i w snowparkach, czy nawet w mieście. Składają się na niego takie konkurencje i style jak 
+         <div class="popup1" onclick="myFunction()"><i>Half-pipe</i><span class="popuptext" id="myPopup"><a href="https://pl.wikipedia.org/wiki/Half-pipe"><img src="Halfpipe_Snowboard.jpg" alt="Halfpipe" width="350" height="183"/></a><b>Half-pipe</b> – obiekt sportowy przypominający lekko spłaszczoną rurę o znacznej średnicy przeciętą w poziomie; technicznie składa się z dwóch quarter-pipe’ów postawionych naprzeciw siebie. Half-pipe'y mają pomiędzy rampami szerokie płaskie połączenie, pozwalające sportowcowi odzyskać</span>
+        </div>, 
+
+         <div class="popup2" onclick="myFunction1()"><i>Big Air</i><span class="popuptext" id="Popup2"><a href="https://pl.wikipedia.org/wiki/Big_air"><img src="Universide.jpg" alt="Universide" width="410" height="203"/></a><b>Big Air</b> – konkurencja snowboardowa, w której zawodnik wykonuje triki po wyskoku ze specjalnie zbudowanej rampy. Głównym celem jest osiągnięcie dużej wysokości oraz odległości skoku oraz czystego lądowania. W wielu konkursach Big Air wymagane jest wykonanie triku podczas skoku</span></div>,
+      , Slopestyle, Jibbing. Podstawowym trikiem jest Ollie.</li>
+        <li><b>Styl alpejski</b> - skupia się na jak najlepszej kontroli nad deską podczas jazdy po przygotowanym stoku. Można tutaj wyróżnić jazdę wyścigową i Extremecarving.</li>
+        <li><b>Freeride</b> - polega na jeżdżeniu poza przygotowanymi trasami.</li>
+        <li><b>Snowcross</b> <small>(snowboard cross, boardercross) </small> – jazda na czas po trasie z przeszkodami. W finałach zawodów snowcrossowych zwykle ściga się 4 lub 6 zawodników, z których szybsza połowa przechodzi do następnego etapu.</li>
+    </ul><p><br /><br /><br /></p>
+    <h2 style="text-align: center;" class="mainh2">Zdobyć Snowboard</h2><p><br /><br /></p>
+    <div class="w3-content w3-display-container">
+      <img class="mySlides" alt="image10" src="simtek.jpg" />
+      <img class="mySlides" alt="image20" src="image2.jpg" />
+      <img class="mySlides" alt="image30" src="image3.jpg" />
+      <div class="w3-center w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+    <h2>Kontakty</h2>
+    <p>beta.mark98@gmail.com</p>
+    <h3>Poziom wykształcenia mniejszości narodowych na Litwie</h3>
+	
+		<table>
+   <tr>
+			<th rowspan="2">Wyksztalcenie</th>
+			<th rowspan="2">Lata</th>
+			<th colspan="6">Narodorosci</th>
+			<th rowspan="2">Srednia krajowa</th>
+		</tr>
+
+		<tr>
+			<th>Litwini</th>
+			<th>Rosjanie</th>
+			<th>Polacy</th>
+			<th>Bialorsini</th>
+			<th>Ukraincy</th>
+			<th>Zydzi</th>
+		</tr>
+
+		<tr>
+			<th rowspan="5">Wyzsze</th>
+			<td>1970</td>
+			<td>46</td>
+			<td>74</td>
+			<th>15</th>
+			<td>54</td>
+			<td>106</td>
+			<td>236</td>
+			<td>35</td>
+		</tr>
+
+		<tr>
+			<td>1979</td>
+			<td>74</td>
+			<td>118</td>
+			<th>28</th>
+			<td>77</td>
+			<td>153</td>
+			<td>326</td>
+			<td>61</td>
+		</tr>
+
+		<tr>
+			<td>1989</td>
+			<td>109</td>
+			<td>172</td>
+			<th>50</th>
+			<td>118</td>
+			<td>207</td>
+			<td>385</td>
+			<td>97</td>
+		</tr>
+
+		<tr>
+			<th>2001</th>
+			<th>128</th>
+			<th>159</th>
+			<th>63</th>
+			<th>112</th>
+			<th>203</th>
+			<th>385</th>
+			<th>126</th>
+		</tr>
+
+		<tr>
+			<th>2011</th>
+			<th>216</th>
+			<th>246</th>
+			<th>138</th>
+			<th>174</th>
+			<th>283</th>
+			<th>501</th>
+			<th>212</th>
+		</tr>
+
+		</table>
+        <ul>
+            <li><a href="https://www.google.com">Google</a></li>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.instagram.com">Instagram</a></li>
+          </ul>
+          <h2>Feedback Form</h2>
+      <p>Napisz komentarz zeby ulepszyc dzialanie sajtu</p>
+
+      <form method = "get" action = "">
+         <p>
+            <input type = "hidden" name = "recipient"
+               value = "deitel@deitel.com" />
+            <input type = "hidden" name = "subject" 
+               value = "Feedback Form" />
+            <input type = "hidden" name = "redirect" 
+               value = "main.html" /> 
+         </p>
+
+         <p><label>Imie: 
+               <input name = "name" type = "text" size = "25" />
+            </label></p>
+ 
+         <!-- <textarea> creates a multiline textbox -->
+         <p><label>Koment:<br />
+            <textarea name = "comments"
+               rows = "4" cols = "36">Pisz tutaj</textarea>
+         </label></p>
+
+         <!-- <input type = "password"> inserts a -->
+         <!-- textbox whose display is masked with -->
+         <!-- asterisk characters -->
+         <p><label>E-mail Adres: 
+            <input name = "email" type = "password"  size = "25" />
+         </label></p>              
+
+         <p>
+            <strong>Things you liked:</strong><br />
+
+            <label>Moje Interesy
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Design" /></label>
+            <label>Hyperlinki
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Links" /></label>
+            <label>Ogolem caly site
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Ease" /></label> 
+            <label>Fotografije 
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Images" /></label>
+            <label>Source code
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Code" /></label>
+         </p>
+
+         <!-- <input type = "radio" /> creates a radio -->
+         <!-- button. The difference between radio buttons -->
+         <!-- and checkboxes is that only one radio button -->
+         <!-- in a group can be selected. -->
+         <p>
+            <strong>Jak znalazles moj site:</strong><br />
+
+            <label>Link z drugiego sajtu
+               <input name = "howtosite" type = "radio"
+                  value = "search engine" checked = "checked" /></label>
+            <label>Przez prezentacje
+               <input name = "howtosite" type = "radio" 
+                  value = "link" /></label> 
+            <label>Przez kolegi
+               <input name = "howtosite" type = "radio" 
+                  value = "deitel.com" /></label>
+            <label>Telewizor
+               <input name = "howtosite" type = "radio" 
+                  value = "book" /></label>
+         </p>
+
+         <p>
+            <label>Ocen moj site: 
+
+                <!-- the <select> tag presents a drop-down -->
+                <!-- list with choices indicated by the -->
+                <!-- <option> tags -->
+               <select name = "rating">
+                  <option selected = "selected">Wspanialy</option>
+                  <option>10</option>
+                  <option>9</option>
+                  <option>8</option>
+                  <option>7</option>
+                  <option>6</option>
+                  <option>5</option>
+                  <option>4</option>
+                  <option>3</option>
+                  <option>2</option>
+                  <option>1</option>
+                  <option>Zly</option>
+               </select>
+            </label>
+         </p>
+
+        <p>
+            <input type = "submit" value = "Submit" />
+            <input type = "reset" value = "Clear" />
+         </p>   
+      </form>
+          <hr />
+        <p style="text-align: center;">Beata Markevic beta.mark98@gmail.com &copy;</p>
+        
+</body>
+</html>
