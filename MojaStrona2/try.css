@@ -1,0 +1,384 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #46dffa;
+	font-size: 12pt;
+	font-weight: 300;
+	color: #363636;
+}
+/* CSS for menu */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: flex;
+	color: white;
+	text-align: center;
+	padding: 20px 50px;
+	font-family: "made tommy", sans-serif;
+	text-decoration: none;
+	font-size: 25px;
+}
+@font-face {
+font-family: "made tommy";
+src: url("tommy.otf") format("opentype");
+}
+@font-face {
+font-family: "Chivo";
+src: url("Chivo.ttf") format("opentype");
+}
+
+h1 {
+	font-family: "made tommy", sans-serif;
+}
+
+li a:hover {
+	background-color: #111;
+}
+
+/* CSS for ads */
+#ad-container {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: normal;
+	justify-content: space-between;
+	height: 100%;
+	margin-top: -20px;
+	padding: 8px;
+	width: 1890px;
+}
+
+#ad-container .ad {
+	position: relative;
+	height: 650px;
+	width: 270px;
+	border: 2px solid black;
+}
+
+.ad img {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.ad a {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+p {
+	width: 1300px;
+	text-align: justify;
+	font-size: 17px;
+
+}
+.snip1143 {
+font-family: 'Raleway', Arial, sans-serif;
+text-align: center;
+text-transform: uppercase;
+font-weight: 500;
+}
+.snip1143 * {
+box-sizing: border-box;
+-webkit-transition: all 0.35s ease;
+transition: all 0.35s ease;
+}
+.snip1143 li {
+display: inline-block;
+list-style: outside none none;
+margin: 0 1.5em;
+overflow: hidden;
+}
+.snip1143 a {
+padding: 0.3em 0;
+color: rgba(255, 255, 255, 0.5);
+position: relative;
+display: inline-block;
+letter-spacing: 1px;
+margin: 0;
+text-decoration: none;
+}
+.snip1143 a:before,
+.snip1143 a:after {
+position: absolute;
+-webkit-transition: all 0.35s ease;
+transition: all 0.35s ease;
+}
+.snip1143 a:before {
+top: 100%;
+display: block;
+height: 3px;
+width: 100%;
+content: "";
+background-color: #c0392b;
+}
+.snip1143 a:after {
+padding: 0.3em 0;
+position: absolute;
+top: 100%;
+left: 0;
+content: attr(title);
+color: white;
+white-space: nowrap;
+}
+  .snip1143:hover:before {
+	content: attr(title);
+  }
+.snip1143 li:hover a,
+.snip1143 .current a {
+transform: translateY(-100%);
+}
+.container {
+width: 1200px;
+margin: 50px auto;
+}
+
+
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+#copyright
+{
+overflow: hidden;
+padding: 5em 0em;
+text-align: center;
+}
+
+#copyright p
+{
+letter-spacing: 0.20em;
+text-align: center;
+text-transform: uppercase;
+font-size: 0.80em;
+color: rgb(0, 0, 0)
+}
+
+#copyright a
+{
+text-decoration: none;
+color: rgb(238, 159, 69)
+}
+
+#train {
+	font-size: 10px;
+	width: 1300px;
+	font-size: 17px;
+	background: #1E1B1A;
+}
+.bg-color {
+		background-color: #333;
+		position: absolute;
+		top: 7px;
+		left: 0;
+		width: 100%;
+		height: 98%;
+		z-index: -1;
+		
+		
+	}
+	.textik {
+		color: white;
+		width: 1300px;
+		font-size: 17px;
+		margin-left: 280px;
+		padding-top: 10px;
+	}
+
+	#tex {
+		color: white;
+		width: 1300px;
+		font-size: 17px;
+		margin-left: 300px;
+		padding-top: 10px;
+	}
+
+	#textik2 {
+		color: white;
+		width: 1300px;
+		font-size: 17px;
+		margin-left: 300px;
+		padding-top: 10px;
+	}
+
+
+	
+	.odstep {
+		margin-bottom: 27px;
+		list-style-position: inside;
+	}
+
+hr {
+	display: none;
+}
+
+.title
+	{
+		margin-bottom: 2em;
+		text-transform: uppercase;
+	}
+
+	.title h2
+	{
+		font-weight: 400;
+		font-size: 2em;
+		color: #1E90FF;
+	}
+	
+	.title .byline
+	{
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 0.90em;
+		color: #6F6F6F;
+	}
+
+#footer-wrapper
+{
+	background: #0F0F0F;
+}
+
+.container {
+	width: 1200px;
+	margin: 0px auto;
+	height: 50px;
+}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+	
+	#footer-wrapper
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+		background: #1E1B1A;
+	}
+
+	#footer
+	{
+		color: #ADADAD;
+	}
+	
+	#footer .title h2
+	{
+		font-weight: 400;
+		font-size: 1.2em;
+		color: #FFF;
+	}
+
+	#footer .title
+	{
+		border-color: #2D2926 !important;
+	}
+	
+	#footer .style1 li
+	{
+		border-color: #2D2926 !important;
+	}
+	
+	#footer .style1 a
+	{
+		font-size:1em;
+		color: #B1B1B1;
+	}
+	
+	#box1
+	{
+		float: left;
+		width: 354px;
+		margin-right: 24px;
+		padding-right: 30px;
+	}
+	
+	#box2
+	{
+		float: left;
+		width: 354px;
+		margin-left: 24px;
+		padding-right: 30px;
+	}
+	
+	#box3
+	{
+		float: right;
+		width: 344px;
+		padding-left: 40px;
+	}
+
+	#czcionka {
+		margin-bottom: 27px;
+		list-style-position: inside;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	}
+
+	#box4
+	{
+		width: 165px;
+		float: right;
+		padding-right: 180px;
+		text-align: center;
+	}
+
+	
+	#ul {
+		list-style: none; /* removes default bullet point */
+		margin: 0; /* removes default margin */
+		padding: 0; /* removes default padding */
+	  }
+	  
+	#li {
+		display: inline-block; /* displays list items as block elements */
+		margin-bottom: 1px; /* adds spacing between each list item */
+	  }
+
+	
+
+	#daa {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+	}
+
+	.style1 p
+	{
+		
+	padding-top: 1px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	width: 200px;
+	letter-spacing: 1px;
+	}
+
+	.style2 p
+	{
+		
+	padding-top: 1px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	width: 210px;
+	}
+
+	
